@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Turnos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Reserva tu Turno</h1>
+        <nav>
+            <button id="loginBtn">Iniciar Sesión</button>
+        </nav>
+    </header>
+    <main>
+        <section id="login" style="display: none;">
+            <h2>Iniciar Sesión</h2>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+        <section id="seleccion-turno">
+            <h2>Selecciona el turno</h2>
+            <div class="turno-selector">
+                <button id="turno-manana">Mañana</button>
+                <button id="turno-tarde">Tarde</button>
+            </div>
+        </section>
+        <section id="turnos" style="display: none;">
+            <h2>Horarios Disponibles</h2>
+            <div class="turnos-container">
+                <!-- Los horarios se llenarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+    </main>
+    <script src="funcionalidad.js"></script>
+</body>
+</html>

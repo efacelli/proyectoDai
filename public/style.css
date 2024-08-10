@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0e6ff;  /* Lavanda pastel */
+}
+
+header {
+    background-color: #ffd1dc;  /* Rosa pastel */
+    color: #5a5a5a;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #5a5a5a;
+}
+
+.turno-selector {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.turno-selector button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background-color: #b5e8e0;  /* Menta pastel */
+    color: #5a5a5a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.turno-selector button:hover {
+    background-color: #98d8d0;  /* Menta pastel más oscuro */
+}
+
+.turnos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.turno {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #fdfd96;  /* Amarillo pastel */
+    color: #5a5a5a;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.turno:hover {
+    background-color: #fafa78;  /* Amarillo pastel más oscuro */
+}
+
+#login {
+    max-width: 300px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#loginForm input, #loginForm button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#loginForm input {
+    background-color: #f9f9f9; /* Color de fondo claro para los campos de entrada */
+}
+
+#loginForm button {
+    background-color: #b5e8e0;  /* Menta pastel */
+    color: #5a5a5a;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#loginForm button:hover {
+    background-color: #98d8d0;  /* Menta pastel más oscuro */
+}
+
+.admin-mode .turno {
+    position: relative;
+}
+
+.admin-mode .turno::after {
+    content: "❌";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.2rem;
+    cursor: pointer;
+}
